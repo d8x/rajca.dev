@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Damian Rajca</title>
@@ -7,12 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    
-	<atom:link href="https://rajca.dev/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 01 Aug 2019 17:01:01 +0000</lastBuildDate><atom:link href="https://rajca.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Untagged</title>
+      <title>untagged</title>
       <link>https://rajca.dev/tags/untagged/</link>
       <pubDate>Thu, 01 Aug 2019 17:01:01 +0000</pubDate>
       

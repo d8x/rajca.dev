@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Untagged on Damian Rajca</title>
+    <title>untagged on Damian Rajca</title>
     <link>https://rajca.dev/tags/untagged/</link>
-    <description>Recent content in Untagged on Damian Rajca</description>
+    <description>Recent content in untagged on Damian Rajca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 01 Aug 2019 17:01:01 +0000</lastBuildDate>
-    
-	<atom:link href="https://rajca.dev/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 01 Aug 2019 17:01:01 +0000</lastBuildDate><atom:link href="https://rajca.dev/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post</title>
       <link>https://rajca.dev/posts/test-post/</link>
