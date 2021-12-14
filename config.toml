@@ -1,9 +1,9 @@
-baseURL = "https://rajca.dev"
+baseURL = "https://d8x.github.io/rajca.dev"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Damian Rajca"
 theme = "hermit"
-# enableGitInfo = true
+enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 # hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
