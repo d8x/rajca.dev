@@ -27,9 +27,6 @@ Department of mechanical engineering and computer science.
 * Polish: native 
 * English: advanced
 
-Below you can find toys that I have worked with, or I'm working currently.
----
-
 :computer: Programming languages
 ---
 * Golang: Gin, Echo, Gorilla, GORM 
