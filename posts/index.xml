@@ -44,5 +44,5 @@ Nginx must be installed to listen on port 80 because requests are forwarded by t
 <p>This setup is simple, cost-effective, and highly flexible.
 It is isolated and secure, with LXC/containers protected from the Internet and other local network resources.
 It offers a convenient and scalable environment for web development.</p>
-<p>Feel free to contact me at <a href="mailto:d8x@d8x.me">d8x[at]d8x.me</a> for more details or inquiries.</p>
+<p>Feel free to contact me at <a href="mailto:d8x@d8x.me">d8x@d8x.me</a> for more details or inquiries.</p>
 ]]></content></item></channel></rss>
