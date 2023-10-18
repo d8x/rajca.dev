@@ -1,0 +1,48 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Damian Rajca</title><link>https://rajca.dev/posts/</link><description>Recent content in Posts on Damian Rajca</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Oct 2023 07:02:14 +0000</lastBuildDate><atom:link href="https://rajca.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>How I build development environment for web developers using Proxmox and Dedicated Server</title><link>https://rajca.dev/posts/web-proxmox/</link><pubDate>Wed, 18 Oct 2023 07:02:14 +0000</pubDate><guid>https://rajca.dev/posts/web-proxmox/</guid><description>Introduction Welcome to my journey of creating a stable and reliable development environment for web developers. This environment is built upon a dedicated server running Proxmox. Our primary goals were to provide each developer with an isolated and accessible development environment both from the Internet and the local network.
+Setup Dedicated Server We chose a dedicated server from OVH with the following specifications:
+CPU: Intel Xeon E3-1270v6 (4 cores, 8 threads, 3.</description><content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Welcome to my journey of creating a stable and reliable development environment for web developers. This environment is built upon a dedicated server running Proxmox. Our primary goals were to provide each developer with an isolated and accessible development environment both from the Internet and the local network.</p>
+<h2 id="setup">Setup</h2>
+<h3 id="dedicated-server">Dedicated Server</h3>
+<p>We chose a dedicated server from OVH with the following specifications:</p>
+<ul>
+<li>CPU: Intel Xeon E3-1270v6 (4 cores, 8 threads, 3.8GHz base, 4.2GHz turbo)</li>
+<li>RAM: 64GB DDR4 ECC at 2400 MHz</li>
+<li>Disk: SoftRaid with 2x450GB NVMe drives</li>
+<li>Network: 1Gbps</li>
+<li>IPs: 2 IPv4 (main and failover)</li>
+</ul>
+<h3 id="network-configuration">Network Configuration</h3>
+<p>The server has two IP addresses: one public main IP and a second failover IP used for the pfSense router.
+The pfSense router manages private IP addresses for virtual machines and LXC containers.</p>
+<h3 id="domain-name">Domain Name</h3>
+<p>We selected a single domain name for the project, configuring a DNS wildcard A record (*.domain) for the server&rsquo;s failover IP.
+This domain name allows us to access development environments from the Internet.</p>
+<h3 id="pfsense">pfSense</h3>
+<p>pfSense, a free and open-source firewall and router, runs as a virtual machine on Proxmox.
+It uses the failover IP as the WAN interface and distributes private IP addresses to virtual machines and LXC containers via the LAN interface.
+PfSense also serves as a DHCP server, pushing the DNS server address (pfSense&rsquo;s IP) to clients.
+The router forwards HTTP (80) and HTTPS (443) ports to a virtual machine running a Nginx reverse proxy.</p>
+<h3 id="openvpn">OpenVPN</h3>
+<p>OpenVPN is integrated into the pfSense router. Each developer has a dedicated group with limited access,
+enabling them to connect to the Proxmox development network from anywhere. From the local network,
+developers can reach all LXC containers and virtual machines.</p>
+<h3 id="nginx-reverse-proxy">Nginx Reverse Proxy</h3>
+<p>Nginx reverse proxy, installed as a virtual machine, listens on ports 80 and 443.
+It has a LetsEncrypt certificate for the domain name with wildcard. Nginx forwards requests based on the domain name&rsquo;s suffix</p>
+<ul>
+<li><code>dev1.domain</code> -&gt; LXC/container with <code>dev1</code> hostname</li>
+</ul>
+<h3 id="mysql-database">MySQL Database</h3>
+<p>The primary MySQL database, also a virtual machine, listens on port 3306 and uses a private IP address.
+It connects through the pfSense router, serving LXC/container development environments.
+The database is accessible via its hostname from within LXC/containers.</p>
+<h3 id="lxccontainers">LXC/Containers</h3>
+<p>Each developer has their dedicated LXC/container, configured with a private IP address and access through the pfSense router.
+Nginx must be installed to listen on port 80 because requests are forwarded by the Nginx reverse proxy based on the domain name suffix.</p>
+<h2 id="summary">Summary</h2>
+<p>This setup is simple, cost-effective, and highly flexible.
+It is isolated and secure, with LXC/containers protected from the Internet and other local network resources.
+It offers a convenient and scalable environment for web development.</p>
+<p>Feel free to contact me at <a href="mailto:d8x@d8x.me">d8x[at]d8x.me</a> for more details or inquiries.</p>
+]]></content></item></channel></rss>
