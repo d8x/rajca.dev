@@ -1,6 +1,6 @@
 ---
 title: "How I build development environment for web developers using Proxmox and Dedicated Server"
-date: 2023-10-18T17:02:14Z
+date: 2023-10-18T07:02:14Z
 draft: false
 toc: false
 images:
@@ -56,7 +56,7 @@ developers can reach all LXC containers and virtual machines.
 
 Nginx reverse proxy, installed as a virtual machine, listens on ports 80 and 443. 
 It has a LetsEncrypt certificate for the domain name with wildcard. Nginx forwards requests based on the domain name's suffix 
-(e.g., dev1.domain to an LXC/container with dev1 hostname).
+- `dev1.domain` -> LXC/container with `dev1` hostname
 
 ### MySQL Database
 

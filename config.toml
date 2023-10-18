@@ -12,6 +12,24 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 googleAnalytics = "G-7G62W59S8N"
 # disqusShortname = "yourdiscussshortname"
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = true
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+disablePathToLower = true
 
 [author]
   name = "Damian Rajca"
@@ -71,13 +89,12 @@ googleAnalytics = "G-7G62W59S8N"
 
 
 [menu]
-
   [[menu.main]]
+    identifier = "posts"
     name = "Posts"
     url = "posts/"
-    weight = 10
 
   [[menu.main]]
+    identifier = "about"
     name = "About"
     url = "about/"
-    weight = 20
