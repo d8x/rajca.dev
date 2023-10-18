@@ -1,7 +1,7 @@
 ---
 title: "How I build development environment for web developers using Proxmox and Dedicated Server"
 date: 2023-10-18T17:02:14Z
-draft: true
+draft: false
 toc: false
 images:
 tags:
