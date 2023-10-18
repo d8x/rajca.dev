@@ -75,7 +75,7 @@ This setup is simple, cost-effective, and highly flexible.
 It is isolated and secure, with LXC/containers protected from the Internet and other local network resources. 
 It offers a convenient and scalable environment for web development.
 
-Feel free to contact me at [d8x[at]d8x.me](mailto:d8x@d8x.me) for more details or inquiries.
+Feel free to contact me at [d8x@d8x.me](mailto:d8x@d8x.me) for more details or inquiries.
 
 
 
