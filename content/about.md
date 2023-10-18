@@ -12,7 +12,7 @@ tags:
 Hello, my name is Damian Rajca. Welcome on my personal web page! I'm
 software engineer with a passion to know how things work. 
 
-:school: Education
+## :school: Education
 ---
 Technical university of Wroclaw,
 Department of IT and Management. 
@@ -22,19 +22,19 @@ Technical university of Czestochowa,
 Department of mechanical engineering and computer science. 
 * Computer Science - specialization: systems and networks
 
-:speech_balloon: Languages
+## :speech_balloon: Languages
 ---
 * Polish: native 
 * English: advanced
 
-:computer: Programming languages
+## :computer: Programming languages
 ---
 * Golang: Gin, Echo, Gorilla, GORM 
 * Python: Flask, CherryPy, Django
 
 I have also some experience with: Java (SpringBoot), JavaScript (NestJS, VueJS, NuxtJS), C++, C, Bash
 
-:card_index: Databases
+## :card_index: Databases
 ---
 * PostgreSQL
 * MySQL
@@ -43,7 +43,7 @@ I have also some experience with: Java (SpringBoot), JavaScript (NestJS, VueJS, 
 * Elasticsearch
 * MongoDB
 
-:wrench: DevOps
+## :wrench: DevOps
 ---
 * AWS - EC2, EKS, ECS, SNS, SQS, RDS, Lambda, Batch, S3
 * OpenStack
@@ -58,14 +58,14 @@ I know tools/technologies like:
 * K8S/K3S/Docker
 * Consul, ETCD, Vault, 
 
-:ship: CI/CD
+## :ship: CI/CD
 ---
 * Jenkins
 * GithubAction
 * Gitlab
 * TravisCI
 
-:mountain_cableway: Networks
+## :mountain_cableway: Networks
 ---
 * IPv4/IPv6
 * TCP/UDP/SCTP
